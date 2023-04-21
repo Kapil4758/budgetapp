@@ -1,0 +1,45 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;500;600;700;800;900;1000&display=swap');
+
+*{ margin: 0; padding: 0; box-sizing: border-box; outline: none; }
+
+ul, ol { list-style-type: none; }
+
+body { font-family: 'Nunito', sans-serif; background-color: #F7F9FD; }
+
+#budgetBox #addBudgetExpense { display: flex; flex-wrap: wrap; align-items: flex-end; justify-content: space-between; width: 800px; margin: 30px auto; }
+
+#budgetBox #addBudgetExpense #budgetBox, #budgetBox #addBudgetExpense #expenseBox { padding: 20px; border-radius: 10px; background-color: #FFFFFF; box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.05); margin: 0 30px 0 0; width: calc(50% - 30px); position: relative; }
+#budgetBox #addBudgetExpense #budgetBox::before { content: "Budget App"; font-family: 'Nunito', sans-serif; font-size: 32px; line-height: 1; font-weight: 800; position: absolute; top: -56px; left: 50%; transform: translateX(-50%); color: #363D55; }
+#budgetBox #addBudgetExpense #expenseBox {  margin: 0 0 0 30px; }
+
+
+#budgetBox #addBudgetExpense #budgetBox p, #budgetBox #addBudgetExpense #expenseBox p { width: 100%; margin: 0 0 5px; color: #363D55; font-size: 18px; font-weight: 700; }
+#budgetBox #addBudgetExpense #budgetBox #budget, #budgetBox #addBudgetExpense #expenseBox #expenseName, #budgetBox #addBudgetExpense #expenseBox #expense { width: 100%; margin: 0 0 20px; color: #363D55; border: 1px solid #DCDCDC; padding: 10px; border-radius: 5px; font-size: 14px; font-weight: 600; }
+#budgetBox #addBudgetExpense #budgetBox #budget::-webkit-outer-spin-button, #budgetBox #addBudgetExpense #budgetBox #budget::-webkit-inner-spin-button, #budgetBox #addBudgetExpense #expenseBox #expense::-webkit-outer-spin-button, #budgetBox #addBudgetExpense #expenseBox #expense::-webkit-inner-spin-button { -webkit-appearance: none; }
+#budgetBox #addBudgetExpense #budgetBox #budget[type=number], #budgetBox #addBudgetExpense #expenseBox #expense[type=number] { -moz-appearance: textfield; }
+
+#budgetBox #addBudgetExpense #budgetBox #budgetButton, #budgetBox #addBudgetExpense #expenseBox #expenseButton { border: none; background-color: #587EF4; color: #FFFFFF; padding: 10px 30px; border-radius: 5px; font-family: 'Nunito', sans-serif; font-size: 16px; font-weight: 600; }
+
+#budgetBox #addBudgetExpense #expenseBox p, #budgetBox #addBudgetExpense #expenseBox #expenseName, #budgetBox #addBudgetExpense #expenseBox #expense { width: 100%; margin: 0 0 10px; }
+
+
+#budgetBox #showBudgetExpense { width: 800px; margin: 0 auto; }
+
+#budgetBox #showBudgetExpense #budgetExpenseBalance { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; padding: 20px; background-color: #587EF4; border-radius: 10px; margin: 0 0 30px; }
+#budgetBox #showBudgetExpense #budgetExpenseBalance #showBudgetBox, #budgetBox #showBudgetExpense #budgetExpenseBalance #showExpenseBox, #budgetBox #showBudgetExpense #budgetExpenseBalance #showBalanceBox { text-align: center; }
+#budgetBox #showBudgetExpense #budgetExpenseBalance #showBudgetBox h2, #budgetBox #showBudgetExpense #budgetExpenseBalance #showExpenseBox h2, #budgetBox #showBudgetExpense #budgetExpenseBalance #showBalanceBox h2 { font-size: 24px; line-height: 1; font-weight: 700; margin: 0 0 10px; color: #FFFFFF; }
+#budgetBox #showBudgetExpense #budgetExpenseBalance #showBudgetBox h1, #budgetBox #showBudgetExpense #budgetExpenseBalance #showExpenseBox h1, #budgetBox #showBudgetExpense #budgetExpenseBalance #showBalanceBox h1 { font-size: 24px; line-height: 1; font-weight: 400; color: #FFFFFF; }
+
+
+#budgetBox #showBudgetExpense #expenseDetail { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; padding: 20px; border-radius: 10px; background-color: #FFFFFF; box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.05); }
+
+#budgetBox #showBudgetExpense #expenseDetail #expenseTitleBox, #budgetBox #showBudgetExpense #expenseDetail #expenseAmountBox { width: 45%; }
+#budgetBox #showBudgetExpense #expenseDetail #expenseActionBox { width: 10%; }
+
+#budgetBox #showBudgetExpense #expenseDetail #expenseTitleBox h3, #budgetBox #showBudgetExpense #expenseDetail #expenseAmountBox h3, #budgetBox #showBudgetExpense #expenseDetail #expenseActionBox h3 { color: #363D55; font-size: 18px; font-weight: 700; }
+#budgetBox #showBudgetExpense #expenseDetail #expenseTitleBox ul li, #budgetBox #showBudgetExpense #expenseDetail #expenseAmountBox ul li, #budgetBox #showBudgetExpense #expenseDetail #expenseActionBox ul li { margin: 10px 0 15px; font-size: 16px; line-height: 1; font-weight: 700; color: #757575; padding: 8px 0; }
+#budgetBox #showBudgetExpense #expenseDetail #expenseTitleBox ul li:last-child, #budgetBox #showBudgetExpense #expenseDetail #expenseAmountBox ul li:last-child, #budgetBox #showBudgetExpense #expenseDetail #expenseActionBox ul li:last-child { margin: 15px 0 0; }
+#budgetBox #showBudgetExpense #expenseDetail #expenseTitleBox ul li { padding: 8px 20px; border-left: 5px solid #587EF4; color: #363D55; }
+#budgetBox #showBudgetExpense #expenseDetail #expenseActionBox ul li { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; }
+#budgetBox #showBudgetExpense #expenseDetail #expenseActionBox ul li a svg, #budgetBox #showBudgetExpense #expenseDetail #expenseActionBox ul li span svg { display: block; width: 20px; }
+#budgetBox #showBudgetExpense #expenseDetail #expenseActionBox ul li a svg path, #budgetBox #showBudgetExpense #expenseDetail #expenseActionBox ul li span svg path { fill: #587EF4; }

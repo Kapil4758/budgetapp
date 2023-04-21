@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Budget App</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <div id="budgetBox">
+        <div id="addBudgetExpense">
+            <div id="budgetBox">
+                <p>Budget</p>
+                <input type="number" id="budget">
+                <button id="budgetButton" onclick="return addBudget()">Add Budget</button>
+            </div>
+            <div id="expenseBox">
+                <input type="hidden" id="expenseEdit">
+                <p>Expense Name</p>
+                <input type="text" id="expenseName">
+                <p>Expense Amount</p>
+                <input type="number" id="expense">
+                <button id="expenseButton" onclick="return addExpense()">Add Expense</button>
+            </div>
+        </div>
+        <div id="showBudgetExpense">
+            <div id="budgetExpenseBalance">
+                <div id="showBudgetBox">
+                    <h2 id="budgetTitle">Budget</h2>
+                    <h1>$ <span id="budgetAmount">0</span></h1>
+                </div>
+                <div id="showExpenseBox">
+                    <h2 id="expenseTitle">Expenses</h2>
+                    <h1>$ <span id="expenseAmount">0</span></h1>
+                </div>
+                <div id="showBalanceBox">
+                    <h2 id="balanceTitle">Balance</h2>
+                    <h1>$ <span id="balanceAmount">0</span></h1>
+                </div>
+            </div>
+            <div id="expenseDetail">
+                <div id="expenseTitleBox">
+                    <h3>Expense Title</h3>
+                    <ul id="expenseName">
+
+                    </ul>
+                </div>
+                <div id="expenseAmountBox">
+                    <h3>Expense Value</h3>
+                    <ul id="expenseValue">
+
+                    </ul>
+                </div>
+                <div id="expenseActionBox">
+                    <h3>Action</h3>
+                    <ul id="expenseAction">
+
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="./js/custom.js"></script>
+
+</body>
+</html>
